@@ -1,0 +1,409 @@
+ /*
+
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Oswald', sans-serif;
+
+ */
+
+ /* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ 	General Styles
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+ /* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ 	Header Styles
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+/* General */
+
+header {
+	height: 60px;
+	background-color: #161616;
+	padding-top: 20px;
+}
+
+header .logo {
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 125px;
+	width: 125px;
+	margin-top: -53px;
+}
+
+
+/* Desktop Nav */
+
+.desktop-nav .logo {
+	float: left;
+}
+
+.desktop-nav ul {
+	float: right;
+	margin-top: -3px;
+	padding: 0;
+	width: calc(100% - 125px);
+	text-align: right;
+}
+
+.desktop-nav li {
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.desktop-nav a {
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.desktop-nav a:hover,
+.desktop-nav a:focus,
+.desktop-nav a:active {
+	opacity: 0.8;
+	color: white;
+	text-decoration: none;
+}
+
+.desktop-nav a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.fa-angle-down {
+	margin-left: 7.5px;
+}
+
+.fa-address-book-o {
+	margin-left: 7.5px;
+}
+
+/* Mobile Nav */
+
+.mobile-nav {
+	display: none;
+	text-align: left;
+	margin-left: 30px;
+}
+
+.mobile-nav .logo {
+	display: inline-block;
+}
+
+.mobile-nav .hamburger-container {
+	display: inline-block;
+	margin-left: -4px;
+	vertical-align: top;
+	margin-top: -2px;
+}
+
+.mobile-nav a {
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-right: 25px;
+}
+
+.mobile-nav .logo-container {
+	display: inline-block;
+	margin-left: -4px;
+	width: calc(100% - 150px);
+}
+
+@media (max-width: 768px) {
+	.mobile-nav {
+		display: block;
+	}
+
+	.desktop-nav {
+		display: none;
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	Mobile Menu Styles
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.mobile-menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 170px;
+	background-color: rgba(22, 22, 22, 1);
+	padding-right: 20px;
+	padding-bottom: 20px;
+	transition: 0.2s;
+	transform: translateY(-250px);
+	z-index: 1;
+}
+
+.open {
+	transform: translateY(60px);
+}
+
+.mobile-menu ul {
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-decoration: none;
+	list-style: none;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.mobile-menu a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.mobile-menu a:hover,
+.mobile-menu a:focus,
+.mobile-menu a:active {
+	opacity: 0.8;
+	color: white;
+	text-decoration: none;
+}
+
+.mobile-menu .fa-times {
+	color: white;
+	float: right;
+	padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+	.mobile-menu {
+		display: none;
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	Hero Styles
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.hero {
+  background: url("../img/img1.jpg") no-repeat center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.45);
+  background-blend-mode: multiply;
+  height: 600px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.hero-title {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 75px;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.hero-description {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+
+.hero .button {
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: white;
+	background-color: rgba(255, 152, 0, 0.6);
+	padding: 11px 37.5px;
+	border: 2px solid white;
+	border-radius: 24px;
+}
+
+.fa-shopping-cart {
+	margin-left: 10px;
+	vertical-align: 0px;
+}
+
+.hero a:hover {
+	opacity: 1;
+	color: white;
+	text-decoration: none;
+	background-color: rgba(255, 152, 0, 0.85);
+}
+
+.button-container {
+	margin-top: 50px;
+	text-align: center;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	Sample Photo Styles
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.sample-photos {
+	z-index: -1;
+}
+
+.cardsContainer {
+	text-align: center;
+	margin-top: 32.5px;
+}
+
+.card {
+	width: 100%;
+	display: inline-block;
+	margin: 0 20px 32.5px 0;
+	text-align: left;
+	background-color: white;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	border: 0;
+}
+
+.card:hover {
+	  box-shadow: 0 14px 28px rgba(0,0,0,0.35), 0 10px 10px rgba(0,0,0,0.35);
+}
+
+.card .descriptionContainter {
+	padding: 10px 0 5px 20px;
+}
+
+.card .blogTitle {
+	font-weight: bold;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 25px;
+	margin-bottom: -10px;
+	letter-spacing: -0.6px;
+}
+
+.card .blogAuthor {
+	font-size: 17.5px;
+	color: #666;
+	font-family: 'Oswald', sans-serif;
+}
+
+.card img {
+width: 100%;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	Contact Section Styles
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.contact-section {
+	height: 350px;
+	background-color: #cccccc;
+	text-align: center;
+}
+
+.contact-section h4 {
+	text-align: center;
+	padding-top: 20px;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 45px;
+	margin: 0;
+}
+
+.contact-section p {
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 25px;
+}
+
+.contact-section textarea {
+	height: 27px;
+	vertical-align: bottom;
+	width: 338px;
+}
+
+.contact-section input:focus,
+textarea:focus {
+	outline: none;
+}
+
+.contact-section textarea, .contact-section input {
+	border: none;
+	padding: none;
+	background: none;
+	border-bottom: 1px solid black;
+	margin: 30px;
+}
+
+.contact-section .all-content {
+	padding-top: 30px;
+}
+
+.contact-section button {
+		font-family: 'Oswald', sans-serif;
+		font-size: 18px;
+		text-transform: uppercase;
+		color: white;
+		background-color: rgba(255, 152, 0, 0.6);
+		padding: 11px 37.5px;
+		border: 2px solid white;
+		border-radius: 24px;
+}
+
+.contact-section button:hover {
+	opacity: 1;
+	color: white;
+	text-decoration: none;
+	background-color: rgba(255, 152, 0, 0.85);
+}
+
+@media (max-width: 768px) {
+	.contact-section textarea, .contact-section input {
+		margin: 15px;
+	}
+	.contact-section {
+		height: 350px;
+	}
+}
+
+@media (max-width: 432px) {
+	.contact-section {
+		height: 405px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.contact-section .all-content {
+		padding-top: 0px;
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	Footer Styles
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+footer {
+ 	height: 100px;
+ 	background-color: #161616;
+ 	padding-top: 25px;
+}
+
+footer a {
+ 	color: #999;
+}
+
+footer a:hover {
+	color: rgba(255, 152, 0, 0.85);
+}
+
+.social-icons li {
+ 	display: inline-block;
+ 	padding-right: 40px;
+ 	padding-left: 40px;
+}
+
+.social-icons {
+ 	text-align: center;
+ 	padding-left: 0;
+}
+
+@media (max-width: 768px) {
+	.social-icons li {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
