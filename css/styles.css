@@ -106,6 +106,14 @@ header .logo {
 	margin-right: 25px;
 }
 
+.mobile-nav a:hover,
+.mobile-nav a:focus,
+.mobile-nav a:active {
+	opacity: 0.8;
+	color: white;
+	text-decoration: none;
+}
+
 .mobile-nav .logo-container {
 	display: inline-block;
 	margin-left: -4px;
