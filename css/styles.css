@@ -6,10 +6,6 @@ font-family: 'Oswald', sans-serif;
  */
 
  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- 	General Styles
-  - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
- /* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  	Header Styles
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -30,7 +26,6 @@ header .logo {
 	width: 125px;
 	margin-top: -53px;
 }
-
 
 /* Desktop Nav */
 
@@ -139,7 +134,7 @@ header .logo {
 	top: 0;
 	right: 0;
 	left: 0;
-	height: 170px;
+	height: 207.5px;
 	background-color: rgba(22, 22, 22, 1);
 	padding-right: 20px;
 	padding-bottom: 20px;
@@ -298,8 +293,8 @@ width: 100%;
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .contact-section {
-	height: 350px;
-	background-color: #cccccc;
+	height: 370px;
+	background-color: #dbdbdb;
 	text-align: center;
 }
 
@@ -324,9 +319,18 @@ width: 100%;
 	width: 338px;
 }
 
-.contact-section input:focus,
+.contact-section
+input:focus,
 textarea:focus {
 	outline: none;
+	border-bottom: 2px solid black;
+}
+
+.contact-section input[type='text'],
+.contact-section textarea,
+.contact-section input[type='text']::placeholder,
+.contact-section textarea::placeholder {
+	font-family: 'Oswald', sans-serif;
 }
 
 .contact-section textarea, .contact-section input {
@@ -342,19 +346,19 @@ textarea:focus {
 }
 
 .contact-section button {
-		font-family: 'Oswald', sans-serif;
-		font-size: 18px;
-		text-transform: uppercase;
-		color: white;
-		background-color: rgba(255, 152, 0, 0.6);
-		padding: 11px 37.5px;
-		border: 2px solid white;
-		border-radius: 24px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: black;
+	background-color: rgba(255, 152, 0, 0.6);
+	padding: 5px 30px;
+	border: 2px solid black;
+	border-radius: 24px;
 }
 
 .contact-section button:hover {
 	opacity: 1;
-	color: white;
+	color: black;
 	text-decoration: none;
 	background-color: rgba(255, 152, 0, 0.85);
 }
@@ -363,14 +367,11 @@ textarea:focus {
 	.contact-section textarea, .contact-section input {
 		margin: 15px;
 	}
-	.contact-section {
-		height: 350px;
-	}
 }
 
 @media (max-width: 432px) {
 	.contact-section {
-		height: 405px;
+		height: 455px;
 	}
 }
 
