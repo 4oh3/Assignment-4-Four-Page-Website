@@ -134,7 +134,7 @@ header .logo {
 	top: 0;
 	right: 0;
 	left: 0;
-	height: 207.5px;
+	height: 175px;
 	background-color: rgba(22, 22, 22, 1);
 	padding-right: 20px;
 	padding-bottom: 20px;
@@ -167,6 +167,11 @@ header .logo {
 .mobile-menu a:focus,
 .mobile-menu a:active {
 	opacity: 0.8;
+	color: white;
+	text-decoration: none;
+}
+
+.mobile-menu a {
 	color: white;
 	text-decoration: none;
 }
@@ -220,11 +225,6 @@ header .logo {
 	padding: 11px 37.5px;
 	border: 2px solid white;
 	border-radius: 24px;
-}
-
-.fa-shopping-cart {
-	margin-left: 10px;
-	vertical-align: 0px;
 }
 
 .hero a:hover {
@@ -416,3 +416,22 @@ footer a:hover {
 		padding-right: 10px;
 	}
 }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	Product Page Styles
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+ .products-p {
+ 	font-family: 'Oswald', sans-serif;
+ 	font-size: 30px;
+ 	font-weight: 500;
+ 	background-color: #161616;
+ 	color: white;
+ 	font-style: italic;
+ 	width: 100%;
+ 	padding-left: 2.5px;
+ }
+
+ .logo-dodge {
+ 	margin-top: 32px;
+ }
