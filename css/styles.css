@@ -5,10 +5,16 @@ font-family: 'Oswald', sans-serif;
 
  */
 
+/* Universal Styles */
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
  /* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  	Header Styles
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
 
 /* General */
 
@@ -72,6 +78,12 @@ header .logo {
 
 .fa-address-book-o {
 	margin-left: 7.5px;
+}
+
+.fa-question-circle {
+	padding-left: 7.5px;
+	vertical-align: middle;
+	padding-bottom: 5px;
 }
 
 /* Mobile Nav */
@@ -216,7 +228,7 @@ header .logo {
 	text-align: center;
 }
 
-.hero .button {
+.button-container .button {
 	font-family: 'Oswald', sans-serif;
 	font-size: 18px;
 	text-transform: uppercase;
@@ -227,7 +239,7 @@ header .logo {
 	border-radius: 24px;
 }
 
-.hero a:hover {
+.button-container a:hover {
 	opacity: 1;
 	color: white;
 	text-decoration: none;
@@ -237,6 +249,35 @@ header .logo {
 .button-container {
 	margin-top: 50px;
 	text-align: center;
+}
+
+.fa-shopping-cart {
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-bottom: 7px;
+}
+
+.about-container {
+	text-align: center;
+	margin-top: 125px;
+}
+
+.about-container a {
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: white;
+	background-color: rgba(153, 153, 153, 0.75);
+	padding: 5px 15px;
+	border: 2px solid white;
+	border-radius: 24px;
+}
+
+.about-container a:hover {
+	opacity: 1;
+	color: white;
+	text-decoration: none;
+	background-color: rgba(153, 153, 153, 1);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -319,9 +360,8 @@ width: 100%;
 	width: 338px;
 }
 
-.contact-section
-input:focus,
-textarea:focus {
+.contact-section input:focus,
+.contact-section textarea:focus {
 	outline: none;
 	border-bottom: 2px solid black;
 }
@@ -363,6 +403,10 @@ textarea:focus {
 	background-color: rgba(255, 152, 0, 0.85);
 }
 
+.contact-section button:focus {
+	outline: none;
+}
+
 @media (max-width: 768px) {
 	.contact-section textarea, .contact-section input {
 		margin: 15px;
@@ -371,7 +415,7 @@ textarea:focus {
 
 @media (max-width: 432px) {
 	.contact-section {
-		height: 455px;
+		height: 400px;
 	}
 }
 
@@ -386,13 +430,13 @@ textarea:focus {
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
- 	height: 100px;
- 	background-color: #161616;
- 	padding-top: 25px;
+	height: 100px;
+	background-color: #161616;
+	padding-top: 25px;
 }
 
 footer a {
- 	color: #999;
+	color: #999;
 }
 
 footer a:hover {
@@ -400,14 +444,14 @@ footer a:hover {
 }
 
 .social-icons li {
- 	display: inline-block;
- 	padding-right: 40px;
- 	padding-left: 40px;
+	display: inline-block;
+	padding-right: 40px;
+	padding-left: 40px;
 }
 
 .social-icons {
- 	text-align: center;
- 	padding-left: 0;
+	text-align: center;
+	padding-left: 0;
 }
 
 @media (max-width: 768px) {
@@ -421,17 +465,67 @@ footer a:hover {
 	Product Page Styles
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
- .products-p {
- 	font-family: 'Oswald', sans-serif;
- 	font-size: 30px;
- 	font-weight: 500;
- 	background-color: #161616;
- 	color: white;
- 	font-style: italic;
- 	width: 100%;
- 	padding-left: 2.5px;
- }
+.products-p {
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	background-color: #161616;
+	color: white;
+	font-style: italic;
+	width: 100%;
+	padding-left: 2.5px;
+}
 
- .logo-dodge {
- 	margin-top: 32px;
- }
+.logo-dodge {
+	margin-top: 32px;
+}
+
+ /* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ 	About Page Styles
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.about-card {
+	width: 300px;
+	margin: 25px auto;
+	text-align: left;
+	background-color: white;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	border: 0;
+	padding-bottom: 15px;
+	background-color: #EEEEEE;
+}
+
+.about-card .description-Containter {
+	padding: 10px 0 5px 20px;
+}
+
+.about-card .aboutTitle {
+	font-weight: bold;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 25px;
+	margin-bottom: -5px;
+	letter-spacing: -0.6px;
+}
+
+.about-card .aboutAuthor {
+	font-size: 20px;
+	color: #666;
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	margin-bottom: -5px;
+}
+
+.about-card img {
+	width: 100%;
+}
+
+.about-description {
+	background-color: #EEEEEE;
+	width: 100%;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 22.5px;
+	margin: 0 20px 32.5px 0;
+	text-align: justify;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	padding: 20px 20px 2.5px 20px;
+}
